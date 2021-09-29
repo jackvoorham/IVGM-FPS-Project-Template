@@ -1,3 +1,8 @@
 Theme:
 Dracula's Castle/Dungeon - Inspired by the supermario bros level
 
+Rooms:
+1 room with 2 doors. 1 big door and 1 small. Small is for levels and big is for ending.
+Small door goes to different room each time, so new level. First room is last room.
+Boss fight spawns after all minor enemies are defeated. If player wins he can open the 
+big door and win.
