@@ -2,7 +2,11 @@
   "dependencies": {
     "com.unity.ads": "3.7.5",
     "com.unity.analytics": "3.6.11",
+<<<<<<< HEAD
+    "com.unity.collab-proxy": "1.9.0",
+=======
     "com.unity.collab-proxy": "1.11.2",
+>>>>>>> 8b8beb62487444e994b5496e71eb3e6d7a939491
     "com.unity.connect.share": "4.2.2",
     "com.unity.ide.rider": "2.0.7",
     "com.unity.ide.visualstudio": "2.0.11",
