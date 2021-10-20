@@ -106,9 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de939d976a5bb0419ccd8dbd0b6836b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selfDestructYHeight: -20
-  pathReachingRadius: 2
-  orientationSpeed: 10
+  selfDestructYHeight: -10
+  pathReachingRadius: 5
+  orientationSpeed: 50
   deathDuration: 0
   swapToNextWeapon: 0
   delayAfterWeaponSwap: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   - {fileID: 8934028655093144013}
   - {fileID: 1407167163009738010}
   - {fileID: 6104096765092005263}
-  onDetectSFX: {fileID: 8300000, guid: 25722734eeccba042a18e26e376ca542, type: 3}
+  onDetectSFX: {fileID: 8300000, guid: f03b4d7f443c72e4bb85cbdb63ecd7ad, type: 3}
   MovementSound: {fileID: 0}
   PitchDistortionMovementSpeed:
     min: 1
@@ -196,8 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27364eefd6dd0341ba72a3bfc0d9727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 150
-  criticalHealthRatio: 0.3
+  maxHealth: 350
+  criticalHealthRatio: -0.3
 --- !u!114 &3464315327790461765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +224,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -777,7 +777,7 @@ MonoBehaviour:
   shootType: 1
   projectilePrefab: {fileID: 528546716365072993, guid: ec753d54f333bb944b8b04884ad63828,
     type: 3}
-  delayBetweenShots: 0.8
+  delayBetweenShots: 0.9
   bulletSpreadAngle: 0
   bulletsPerShot: 1
   recoilForce: 1
@@ -793,7 +793,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 0}
   muzzleFlashPrefab: {fileID: 3930201484039205849}
   unparentMuzzleFlash: 0
-  shootSFX: {fileID: 8300000, guid: a56e3c9f90e17894eb1625f603eceb54, type: 3}
+  shootSFX: {fileID: 8300000, guid: b978cff91e0e0e24783f9ecb5b2048ff, type: 3}
   changeWeaponSFX: {fileID: 0}
   useContinuousShootSound: 0
   continuousShootStartSFX: {fileID: 0}
