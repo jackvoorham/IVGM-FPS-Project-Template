@@ -5,7 +5,7 @@ using UnityEngine;
 public class vialpower : MonoBehaviour
 {
     Pickup m_Pickup;
-    public float timerLength = 10f;
+    public float timerLength = 4f;
     void Start()
     {
         m_Pickup = GetComponent<Pickup>();

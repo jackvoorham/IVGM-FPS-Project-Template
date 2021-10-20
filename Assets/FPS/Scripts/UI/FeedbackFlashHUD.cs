@@ -109,7 +109,7 @@ public class FeedbackFlashHUD : MonoBehaviour
         } 
         else
         {
-            vignetteCanvasGroup.gameObject.SetActive(false);
+            vialCanvasGroup.gameObject.SetActive(false);
         }
     }
 

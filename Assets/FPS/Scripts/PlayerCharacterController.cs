@@ -169,10 +169,10 @@ public class PlayerCharacterController : MonoBehaviour
         if (vialIsOn && vialTimer > 0f)
         {
             vialTimer -= Time.deltaTime;
-            sprintSpeedModifier = 4f;
+            jumpForce = 12f;
         } else if (vialIsOn && vialTimer <= 0f)
         {
-            sprintSpeedModifier = 2f;
+            jumpForce = 9f;
             vialIsOn = false;
             audioSource.Stop();
         }
