@@ -110,6 +110,7 @@ public class EnemyController : MonoBehaviour
     Collider[] m_SelfColliders;
     GameFlowManager m_GameFlowManager;
     bool m_WasDamagedThisFrame;
+    bool dead = false;
     float m_LastTimeWeaponSwapped = Mathf.NegativeInfinity;
     int m_CurrentWeaponIndex;
     WeaponController m_CurrentWeapon;
@@ -351,6 +352,7 @@ public class EnemyController : MonoBehaviour
 
     void OnDie()
     {   
+        dead = true;
         m_NavMeshAgent.speed = 0;
         orientationSpeed = 0;
         if (onDie != null)
@@ -413,7 +415,7 @@ public class EnemyController : MonoBehaviour
         if ((m_LastTimeWeaponSwapped + delayAfterWeaponSwap) >= Time.time)
             return false;
 
-        if (onDie != null) {
+        if (dead) {
             return false;
         }
         // Shoot the weapon
