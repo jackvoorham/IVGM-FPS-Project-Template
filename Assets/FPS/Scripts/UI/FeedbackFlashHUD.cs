@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class FeedbackFlashHUD : MonoBehaviour
@@ -38,28 +38,14 @@ public class FeedbackFlashHUD : MonoBehaviour
     Health m_PlayerHealth;
     GameFlowManager m_GameFlowManager;
 
-    PlayerCharacterController player;
-    [Header("Vial Power Up")]
-
-    public CanvasGroup vialCanvasGroup;
-
-    public float vialMaxAlpha = .8f;
-
-    public float viallinesFrequency = 4f;
-
-
-
     void Start()
     {
         // Subscribe to player damage events
-        // PlayerCharacterController playerCharacterController = FindObjectOfType<PlayerCharacterController>();
-        player = FindObjectOfType<PlayerCharacterController>();
-        DebugUtility.HandleErrorIfNullFindObject<PlayerCharacterController, FeedbackFlashHUD>(player, this);
+        PlayerCharacterController playerCharacterController = FindObjectOfType<PlayerCharacterController>();
+        DebugUtility.HandleErrorIfNullFindObject<PlayerCharacterController, FeedbackFlashHUD>(playerCharacterController, this);
 
-        // m_PlayerHealth = playerCharacterController.GetComponent<Health>();
-        // DebugUtility.HandleErrorIfNullGetComponent<Health, FeedbackFlashHUD>(m_PlayerHealth, this, playerCharacterController.gameObject);
-        m_PlayerHealth = player.GetComponent<Health>();
-        DebugUtility.HandleErrorIfNullGetComponent<Health, FeedbackFlashHUD>(m_PlayerHealth, this, player.gameObject);
+        m_PlayerHealth = playerCharacterController.GetComponent<Health>();
+        DebugUtility.HandleErrorIfNullGetComponent<Health, FeedbackFlashHUD>(m_PlayerHealth, this, playerCharacterController.gameObject);
 
         m_GameFlowManager = FindObjectOfType<GameFlowManager>();
         DebugUtility.HandleErrorIfNullFindObject<GameFlowManager, FeedbackFlashHUD>(m_GameFlowManager, this);
@@ -100,16 +86,6 @@ public class FeedbackFlashHUD : MonoBehaviour
                 flashCanvasGroup.gameObject.SetActive(false);
                 m_FlashActive = false;
             }
-        }
-
-        if (player.vialIsOn)
-        {
-            vialCanvasGroup.gameObject.SetActive(true);
-            vialCanvasGroup.alpha = ((Mathf.Sin(Time.time * viallinesFrequency) / 2) + 0.5f) * vialMaxAlpha;
-        } 
-        else
-        {
-            vialCanvasGroup.gameObject.SetActive(false);
         }
     }
 
