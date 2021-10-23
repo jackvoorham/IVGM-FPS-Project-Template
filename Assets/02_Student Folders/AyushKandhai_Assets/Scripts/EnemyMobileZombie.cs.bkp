@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyController))]
-public class EnemyMobile : MonoBehaviour
+public class EnemyMobileZombie : MonoBehaviour
 {
     public enum AIState
     {
@@ -32,7 +32,6 @@ public class EnemyMobile : MonoBehaviour
     const string k_AnimAttackParameter = "Attack";
     const string k_AnimAlertedParameter = "Alerted";
     const string k_AnimOnDamagedParameter = "OnDamaged";
-    const string k_AnimDeathParameter = "Death";
 
     void Start()
     {
@@ -44,7 +43,6 @@ public class EnemyMobile : MonoBehaviour
         m_EnemyController.onLostTarget += OnLostTarget;
         m_EnemyController.SetPathDestinationToClosestNode();
         m_EnemyController.onDamaged += OnDamaged;
-        m_EnemyController.onDie += OnDie;
 
         // Start patrolling
         aiState = AIState.Patrol;
@@ -172,10 +170,5 @@ public class EnemyMobile : MonoBehaviour
         }
 
         animator.SetTrigger(k_AnimOnDamagedParameter);
-    }
-    void OnDie()
-    {
-        Debug.Log("DEATH");
-        animator.SetBool(k_AnimDeathParameter,true);
     }
 }

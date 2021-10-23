@@ -6245,7 +6245,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21120
+  m_Name: pb_Mesh208824
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8215,6 +8215,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 725682412990976622, guid: 3aabbabf1853b2b47957fccb08a2902e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887893776204977721, guid: 3aabbabf1853b2b47957fccb08a2902e,
+        type: 3}
+      propertyPath: m_Speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887893776204977721, guid: 3aabbabf1853b2b47957fccb08a2902e,
+        type: 3}
+      propertyPath: m_AutoRepath
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887893776204977721, guid: 3aabbabf1853b2b47957fccb08a2902e,
+        type: 3}
+      propertyPath: m_AutoTraverseOffMeshLink
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2700927967783760794, guid: 3aabbabf1853b2b47957fccb08a2902e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2903810041475435075, guid: 3aabbabf1853b2b47957fccb08a2902e,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -8233,6 +8258,11 @@ PrefabInstance:
     - target: {fileID: 4049435541305178024, guid: 3aabbabf1853b2b47957fccb08a2902e,
         type: 3}
       propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542176441704430728, guid: 3aabbabf1853b2b47957fccb08a2902e,
+        type: 3}
+      propertyPath: hideFullHealthBar
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5543178391819793650, guid: 3aabbabf1853b2b47957fccb08a2902e,
@@ -8315,7 +8345,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 725682412990976622, guid: 3aabbabf1853b2b47957fccb08a2902e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3aabbabf1853b2b47957fccb08a2902e, type: 3}
 --- !u!1 &2729281212887052390
 GameObject:
@@ -9172,6 +9203,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1615079986, guid: c996b53e9f849234393d1e90f68d1679, type: 3}
+      propertyPath: switchOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 317446275394081008, guid: c996b53e9f849234393d1e90f68d1679,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 319410335075788178, guid: c996b53e9f849234393d1e90f68d1679,
         type: 3}
       propertyPath: m_AnchorMax.y

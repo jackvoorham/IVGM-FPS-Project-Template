@@ -4,7 +4,7 @@ using UnityEngine.AI;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Health), typeof(Actor), typeof(NavMeshAgent))]
-public class EnemyController : MonoBehaviour
+public class EnemyControllerZombie : MonoBehaviour
 {
     [System.Serializable]
     public struct RendererIndexData
@@ -84,7 +84,7 @@ public class EnemyController : MonoBehaviour
     public UnityAction onDetectedTarget;
     public UnityAction onLostTarget;
     public UnityAction onDamaged;
-    public UnityAction onDie;
+    public UnityAction Death;
 
 
     List<RendererIndexData> m_BodyRenderers = new List<RendererIndexData>();
@@ -353,15 +353,13 @@ public class EnemyController : MonoBehaviour
     {
         // spawn a particle system when dying
         var vfx = Instantiate(deathVFX, deathVFXSpawnPoint.position, Quaternion.identity);
+        if (Death != null) {
+            Death.Invoke();
+        }
         Destroy(vfx, 5f);
 
         // tells the game flow manager to handle the enemy destuction
         m_EnemyManager.UnregisterEnemy(this);
-
-        if (onDie != null)
-            {
-                onDie.Invoke();
-            }
 
         // loot an object
         if (TryDropItem())
