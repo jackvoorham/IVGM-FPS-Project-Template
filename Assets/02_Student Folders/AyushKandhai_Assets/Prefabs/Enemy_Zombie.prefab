@@ -606,7 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionSourcePoint: {fileID: 2867274042431918509}
   detectionRange: 20
-  attackRange: 10
+  attackRange: 5
   knownTargetTimeout: 12
   animator: {fileID: 0}
 --- !u!1 &3499215884106000741
@@ -3193,7 +3193,7 @@ MonoBehaviour:
   selfDestructYHeight: -20
   pathReachingRadius: 2
   orientationSpeed: 10
-  deathDuration: 1
+  deathDuration: 2
   swapToNextWeapon: 0
   delayAfterWeaponSwap: 0
   eyeColorMaterial: {fileID: 2100000, guid: e6fdfd4e017234d43ac116abee8fa90a, type: 2}
@@ -3308,8 +3308,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 8
+  m_Acceleration: 5
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0.2

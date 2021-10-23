@@ -350,18 +350,20 @@ public class EnemyController : MonoBehaviour
     }
 
     void OnDie()
-    {
+    {   
+        m_NavMeshAgent.speed = 0;
+        orientationSpeed = 0;
+        if (onDie != null)
+            {
+                onDie.Invoke();
+            }
+
         // spawn a particle system when dying
         var vfx = Instantiate(deathVFX, deathVFXSpawnPoint.position, Quaternion.identity);
         Destroy(vfx, 5f);
 
         // tells the game flow manager to handle the enemy destuction
         m_EnemyManager.UnregisterEnemy(this);
-
-        if (onDie != null)
-            {
-                onDie.Invoke();
-            }
 
         // loot an object
         if (TryDropItem())
@@ -411,6 +413,9 @@ public class EnemyController : MonoBehaviour
         if ((m_LastTimeWeaponSwapped + delayAfterWeaponSwap) >= Time.time)
             return false;
 
+        if (onDie != null) {
+            return false;
+        }
         // Shoot the weapon
         bool didFire = GetCurrentWeapon().HandleShootInputs(false, true, false);
 

@@ -176,6 +176,6 @@ public class EnemyMobile : MonoBehaviour
     void OnDie()
     {
         Debug.Log("DEATH");
-        animator.SetBool(k_AnimDeathParameter,true);
+        animator.SetTrigger(k_AnimDeathParameter);
     }
 }
