@@ -404,7 +404,8 @@ public class EnemyController : MonoBehaviour
             m_Weapons[i].transform.forward = weaponForward;
         }
     }
-
+    
+    
     public bool TryAtack(Vector3 enemyPosition)
     {
         if (m_GameFlowManager.gameIsEnding)
