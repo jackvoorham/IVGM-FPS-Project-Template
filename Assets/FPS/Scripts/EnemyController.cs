@@ -84,6 +84,7 @@ public class EnemyController : MonoBehaviour
     public UnityAction onDetectedTarget;
     public UnityAction onLostTarget;
     public UnityAction onDamaged;
+    public UnityAction onDie;
 
 
     List<RendererIndexData> m_BodyRenderers = new List<RendererIndexData>();
@@ -109,6 +110,7 @@ public class EnemyController : MonoBehaviour
     Collider[] m_SelfColliders;
     GameFlowManager m_GameFlowManager;
     bool m_WasDamagedThisFrame;
+    bool dead = false;
     float m_LastTimeWeaponSwapped = Mathf.NegativeInfinity;
     int m_CurrentWeaponIndex;
     WeaponController m_CurrentWeapon;
@@ -349,7 +351,15 @@ public class EnemyController : MonoBehaviour
     }
 
     void OnDie()
-    {
+    {   
+        dead = true;
+        m_NavMeshAgent.speed = 0;
+        orientationSpeed = 0;
+        if (onDie != null)
+            {
+                onDie.Invoke();
+            }
+
         // spawn a particle system when dying
         var vfx = Instantiate(deathVFX, deathVFXSpawnPoint.position, Quaternion.identity);
         Destroy(vfx, 5f);
@@ -394,7 +404,8 @@ public class EnemyController : MonoBehaviour
             m_Weapons[i].transform.forward = weaponForward;
         }
     }
-
+    
+    
     public bool TryAtack(Vector3 enemyPosition)
     {
         if (m_GameFlowManager.gameIsEnding)
@@ -405,6 +416,9 @@ public class EnemyController : MonoBehaviour
         if ((m_LastTimeWeaponSwapped + delayAfterWeaponSwap) >= Time.time)
             return false;
 
+        if (dead) {
+            return false;
+        }
         // Shoot the weapon
         bool didFire = GetCurrentWeapon().HandleShootInputs(false, true, false);
 

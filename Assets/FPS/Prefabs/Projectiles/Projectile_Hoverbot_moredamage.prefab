@@ -73,7 +73,7 @@ MonoBehaviour:
   gravityDownAcceleration: 0
   trajectoryCorrectionDistance: 5
   inheritWeaponVelocity: 0
-  damage: 20
+  damage: 15
   areaOfDamage: {fileID: 0}
   radiusColor: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &5564024855854763701

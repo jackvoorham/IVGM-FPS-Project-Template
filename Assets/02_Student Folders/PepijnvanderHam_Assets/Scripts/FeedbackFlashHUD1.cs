@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class FeedbackFlashHUD : MonoBehaviour
+public class FeedbackFlashHUD1 : MonoBehaviour
 {
     [Header("References")]
     [Tooltip("Image component of the flash")]

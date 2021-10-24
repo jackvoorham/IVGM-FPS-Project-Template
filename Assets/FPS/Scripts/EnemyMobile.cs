@@ -32,6 +32,7 @@ public class EnemyMobile : MonoBehaviour
     const string k_AnimAttackParameter = "Attack";
     const string k_AnimAlertedParameter = "Alerted";
     const string k_AnimOnDamagedParameter = "OnDamaged";
+    const string k_AnimDeathParameter = "Death";
 
     void Start()
     {
@@ -43,6 +44,7 @@ public class EnemyMobile : MonoBehaviour
         m_EnemyController.onLostTarget += OnLostTarget;
         m_EnemyController.SetPathDestinationToClosestNode();
         m_EnemyController.onDamaged += OnDamaged;
+        m_EnemyController.onDie += OnDie;
 
         // Start patrolling
         aiState = AIState.Patrol;
@@ -65,7 +67,8 @@ public class EnemyMobile : MonoBehaviour
         animator.SetFloat(k_AnimMoveSpeedParameter, moveSpeed);
 
         // changing the pitch of the movement sound depending on the movement speed
-        m_AudioSource.pitch = Mathf.Lerp(PitchDistortionMovementSpeed.min, PitchDistortionMovementSpeed.max, moveSpeed / m_EnemyController.m_NavMeshAgent.speed);
+        if (moveSpeed != 0)
+            m_AudioSource.pitch = Mathf.Lerp(PitchDistortionMovementSpeed.min, PitchDistortionMovementSpeed.max, moveSpeed / m_EnemyController.m_NavMeshAgent.speed);
     }
 
     void UpdateAIStateTransitions()
@@ -170,5 +173,9 @@ public class EnemyMobile : MonoBehaviour
         }
 
         animator.SetTrigger(k_AnimOnDamagedParameter);
+    }
+    void OnDie()
+    {
+        animator.SetTrigger(k_AnimDeathParameter);
     }
 }

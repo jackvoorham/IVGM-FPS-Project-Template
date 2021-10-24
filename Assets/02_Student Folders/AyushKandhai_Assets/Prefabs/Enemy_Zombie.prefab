@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240671660924370781}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 1.347, z: 0.256}
+  m_LocalPosition: {x: 0, y: 1.097, z: 0.256}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 912525914760168231}
@@ -122,7 +122,6 @@ MonoBehaviour:
   shootType: 2
   projectilePrefab: {fileID: 528546716365072993, guid: ec753d54f333bb944b8b04884ad63828,
     type: 3}
-  delayAfterIntiateShot: 1.5
   delayBetweenShots: 0.8
   bulletSpreadAngle: 0
   bulletsPerShot: 1
@@ -400,7 +399,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &7443501851579663166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,8 +502,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8770406658093843336}
   - component: {fileID: 4348535712110190242}
-  - component: {fileID: 9127681912061154980}
   - component: {fileID: 8578754481971940073}
+  - component: {fileID: 48268041458829081}
   m_Layer: 0
   m_Name: HitBox
   m_TagString: Untagged
@@ -519,8 +518,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2731212431312023381}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.00036058843, y: 1.359, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00036058843, y: 1.109, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7422564782326042133}
@@ -534,19 +533,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2731212431312023381}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!135 &9127681912061154980
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2731212431312023381}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.48
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8578754481971940073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,6 +547,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageMultiplier: 1
   sensibilityToSelfdamage: 0.5
+--- !u!136 &48268041458829081
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2731212431312023381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.35329437
+  m_Height: 2.298825
+  m_Direction: 1
+  m_Center: {x: -0.02000001, y: -0.103027225, z: 0.3}
 --- !u!1 &3065156589363194528
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionSourcePoint: {fileID: 2867274042431918509}
   detectionRange: 20
-  attackRange: 10
+  attackRange: 3
   knownTargetTimeout: 12
   animator: {fileID: 0}
 --- !u!1 &3499215884106000741
@@ -633,7 +633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3499215884106000741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.101, z: 0}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0.48208618}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6779600251104312562}
@@ -1202,6 +1202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7154742022512312332}
   - component: {fileID: 7154742022522203772}
+  - component: {fileID: 2507806413522780798}
   m_Layer: 0
   m_Name: Ghoul@Animations 1
   m_TagString: Untagged
@@ -1217,8 +1218,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7154742022512811052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.25, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 7154742022512312798}
   - {fileID: 7154742022512312350}
@@ -1239,14 +1240,28 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f91e9c3acd0e56345bef559c9c22825d, type: 3}
   m_Controller: {fileID: 9100000, guid: 2cb09c38b4cbaaa498119fbb64fea6c2, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
+  m_CullingMode: 2
+  m_UpdateMode: 1
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &2507806413522780798
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154742022512811052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 1.1433337
+  m_Height: 4.9386597
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.9693298, z: 0.057815075}
 --- !u!1 &7154742022512811054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3193,7 +3208,7 @@ MonoBehaviour:
   selfDestructYHeight: -20
   pathReachingRadius: 2
   orientationSpeed: 10
-  deathDuration: 1
+  deathDuration: 3
   swapToNextWeapon: 0
   delayAfterWeaponSwap: 0
   eyeColorMaterial: {fileID: 2100000, guid: e6fdfd4e017234d43ac116abee8fa90a, type: 2}
@@ -3253,7 +3268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 7154742022522203772}
-  attackStopDistanceRatio: 0.08
+  attackStopDistanceRatio: 0.1
   randomHitSparks:
   - {fileID: 170989233799436222}
   - {fileID: 990823105073145042}
@@ -3307,16 +3322,16 @@ NavMeshAgent:
   m_GameObject: {fileID: 7422564782326042137}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.72
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0.2
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 2.09
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 2
@@ -3471,7 +3486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8567518805442234042}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.017, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: -0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7422564782326042133}
@@ -3491,7 +3506,7 @@ Projector:
   m_FieldOfView: 105.92
   m_AspectRatio: 1
   m_Orthographic: 1
-  m_OrthographicSize: 0.54
+  m_OrthographicSize: 0.72
   m_Material: {fileID: 2100000, guid: 700c8e4508ea3b34999c1917db3d4424, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
@@ -4236,7 +4251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7680001
+      value: 0.5180001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_LocalPosition.z

@@ -150,7 +150,7 @@ MonoBehaviour:
   deathVFX: {fileID: 8950624839484268180, guid: 2a8f5052fe50f7b41b17149abb0f7414,
     type: 3}
   deathVFXSpawnPoint: {fileID: 381893446485871685}
-  lootPrefab: {fileID: 2529580269645609534, guid: 9973c412032becb4ca116ca08be62edf,
+  lootPrefab: {fileID: 2620131183356007192, guid: 0044d3098b06f6b49853197875e06e1e,
     type: 3}
   dropRate: 1
   pathReachingRangeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -224,7 +224,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 7
+  m_Speed: 8
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -467,8 +467,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionSourcePoint: {fileID: 6571005840976436832}
-  detectionRange: 20
-  attackRange: 10
+  detectionRange: 15
+  attackRange: 8
   knownTargetTimeout: 12
   animator: {fileID: 0}
 --- !u!1 &6421371450313891992
