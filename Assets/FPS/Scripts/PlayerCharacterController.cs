@@ -118,6 +118,14 @@ public class PlayerCharacterController : MonoBehaviour
     const float k_JumpGroundingPreventionTime = 0.2f;
     const float k_GroundCheckDistanceInAir = 0.07f;
 
+    [Header("Speedvial")]
+    public bool vialIsOn = false;
+
+    public float vialTimer;
+
+    public AudioClip vialMusic;
+
+
     void Start()
     {
         // fetch components on the same gameObject
@@ -148,7 +156,7 @@ public class PlayerCharacterController : MonoBehaviour
     void Update()
     {
         // check for Y kill
-        if(!isDead && transform.position.y < killHeight)
+        if (!isDead && transform.position.y < killHeight)
         {
             m_Health.Kill();
         }
@@ -158,6 +166,17 @@ public class PlayerCharacterController : MonoBehaviour
         bool wasGrounded = isGrounded;
         GroundCheck();
 
+        if (vialIsOn && vialTimer > 0f)
+        {
+            vialTimer -= Time.deltaTime;
+            jumpForce = 12f;
+        } else if (vialIsOn && vialTimer <= 0f)
+        {
+            jumpForce = 9f;
+            vialIsOn = false;
+            audioSource.Stop();
+        }
+    
         // landing
         if (isGrounded && !wasGrounded)
         {
