@@ -23,14 +23,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240671660924370781}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 1.29, z: 0.256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.32802182, y: 2, z: 1.5467392}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 912525914760168231}
   m_Father: {fileID: 7422564782326042133}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &481631929049479500
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 7046034551330008844}
   - component: {fileID: 7062492066826767653}
   m_Layer: 10
-  m_Name: Weapon_EyeLazers
+  m_Name: Weapon_Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
   weaponRoot: {fileID: 481631929049479500}
   weaponMuzzle: {fileID: 7053203745383788758}
   shootType: 2
-  projectilePrefab: {fileID: 528546716365072993, guid: ec753d54f333bb944b8b04884ad63828,
+  projectilePrefab: {fileID: 2757287192678507106, guid: 1abf77bb0bda04e408e6c0fcf4e40668,
     type: 3}
   delayBetweenShots: 0.8
   bulletSpreadAngle: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   ammoUsedOnStartCharge: 1
   ammoUsageRateWhileCharging: 2
   weaponAnimator: {fileID: 0}
-  muzzleFlashPrefab: {fileID: 5363959910712097812}
+  muzzleFlashPrefab: {fileID: 0}
   unparentMuzzleFlash: 0
   shootSFX: {fileID: 8300000, guid: a56e3c9f90e17894eb1625f603eceb54, type: 3}
   changeWeaponSFX: {fileID: 0}
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionSourcePoint: {fileID: 2867274042431918509}
   detectionRange: 20
-  attackRange: 3
+  attackRange: 10
   knownTargetTimeout: 12
   animator: {fileID: 0}
 --- !u!1 &3499215884106000741
@@ -663,7 +663,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7094498420241097800}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1216,7 +1216,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7154742022512811052}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.06, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
@@ -3231,7 +3231,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   flashOnHitDuration: 0.2
   damageTick: {fileID: 8300000, guid: a7fae22399a6e1d448dc0dd2210f1dac, type: 3}
-  deathVFX: {fileID: 8950624839484268180, guid: 2a8f5052fe50f7b41b17149abb0f7414,
+  deathVFX: {fileID: 5818027340994859811, guid: f57c9d0cc18b4e64fa3252da189e080c,
     type: 3}
   deathVFXSpawnPoint: {fileID: 8770406658093843336}
   lootPrefab: {fileID: 2529580269645609534, guid: 9973c412032becb4ca116ca08be62edf,
@@ -3280,7 +3280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27364eefd6dd0341ba72a3bfc0d9727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 180
   criticalHealthRatio: 0.3
 --- !u!114 &5542176441704430728
 MonoBehaviour:
@@ -3307,12 +3307,12 @@ NavMeshAgent:
   m_GameObject: {fileID: 7422564782326042137}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.72
-  m_Speed: 3.5
-  m_Acceleration: 10
+  m_Radius: 0.5
+  m_Speed: 5
+  m_Acceleration: 3
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 3
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -3785,12 +3785,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5b545b9a1e74c418b061bba5bb9e2c, type: 3}
---- !u!1 &5363959910712097812 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 748781637555137343, guid: 3f5b545b9a1e74c418b061bba5bb9e2c,
-    type: 3}
-  m_PrefabInstance: {fileID: 4617502366950823723}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5956209715007463720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4248,15 +4242,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
