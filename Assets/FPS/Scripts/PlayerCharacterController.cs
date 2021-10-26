@@ -125,6 +125,11 @@ public class PlayerCharacterController : MonoBehaviour
 
     public AudioClip vialMusic;
 
+    [Header("Slowness")]
+    public bool slowIsOn = false;
+
+    public float slowTimer;
+
 
     void Start()
     {
@@ -175,6 +180,18 @@ public class PlayerCharacterController : MonoBehaviour
             jumpForce = 9f;
             vialIsOn = false;
             audioSource.Stop();
+        }
+
+        if (slowIsOn && slowTimer > 0f)
+        {
+            slowTimer -= Time.deltaTime;
+            maxSpeedOnGround = 3f;
+            maxSpeedInAir = 3f;
+        } else if (slowIsOn && slowTimer <= 0f)
+        {
+            maxSpeedOnGround = 10f;
+            maxSpeedInAir = 10f;
+            slowIsOn = false;
         }
     
         // landing
