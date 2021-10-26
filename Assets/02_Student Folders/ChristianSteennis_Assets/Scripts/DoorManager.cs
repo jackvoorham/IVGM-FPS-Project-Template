@@ -33,7 +33,7 @@ public class DoorManager : MonoBehaviour
     [Tooltip("Sound played when recieving damages")]
     public AudioClip damageTick;
 
-    WeaponController doorDestroyer;
+    public WeaponController doorDestroyer;
 
     public UnityAction onDamaged;
     public UnityAction onDie;
@@ -77,6 +77,7 @@ public class DoorManager : MonoBehaviour
         // test if the damage source is the player
         if (damageSource && damageSource.GetComponent<PlayerCharacterController>() && damageSource.GetComponent<PlayerWeaponsManager>().GetActiveWeapon() == doorDestroyer)
         {
+            Debug.Log("damage");
             if (onDamaged != null)
             {
                 onDamaged.Invoke();
