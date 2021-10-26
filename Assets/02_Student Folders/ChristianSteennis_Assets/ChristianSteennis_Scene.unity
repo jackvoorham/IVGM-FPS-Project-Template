@@ -241,7 +241,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 156340, guid: 9770515ffff23894fa760b75b8b24b51, type: 3}
       propertyPath: m_Name
-      value: big_fence.001
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 409784, guid: 9770515ffff23894fa760b75b8b24b51, type: 3}
       propertyPath: m_RootOrder
@@ -1693,7 +1693,7 @@ PrefabInstance:
     - target: {fileID: 3958874172457192768, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3991412933013376607, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
@@ -1783,7 +1783,7 @@ PrefabInstance:
     - target: {fileID: 6703533370924381906, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7487535590201220548, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
@@ -1818,7 +1818,12 @@ PrefabInstance:
     - target: {fileID: 8296525554969501445, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303884233814859921, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8348886849071148464, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
@@ -3484,7 +3489,7 @@ PrefabInstance:
     - target: {fileID: 3958874172457192768, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3991412933013376607, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
@@ -3589,12 +3594,17 @@ PrefabInstance:
     - target: {fileID: 6703533370924381906, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8296525554969501445, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303884233814859921, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8348886849071148464, guid: f60c0d49ecc7aac42b5e2fc6d09f63c3,
         type: 3}
@@ -7009,6 +7019,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1182430291}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1195185877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1195185880}
+  - component: {fileID: 1195185879}
+  - component: {fileID: 1195185878}
+  - component: {fileID: 1195185881}
+  m_Layer: 0
+  m_Name: Room blocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1195185878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195185877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea4170175d245c6409bb0cb4cc7b2c5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: First kill all the enemies!
+  messagePrefab: {fileID: 3003312392959327722, guid: dbfc7742a2f49bf42a9a012e4ec4b773,
+    type: 3}
+  delayBeforeShowing: 0
+--- !u!65 &1195185879
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195185877}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.9214098, z: 2.4441051}
+  m_Center: {x: 0, y: 0.9607049, z: -0.014874935}
+--- !u!4 &1195185880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195185877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.206, y: 0.97, z: -7.187}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1195185881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195185877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f215759091a61b45b55527820364cae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barricade: {fileID: 1195185879}
 --- !u!1001 &1198273586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10597,6 +10682,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   flashOnHitDuration: 0.5
   damageTick: {fileID: 0}
+  doorDestroyer: {fileID: 8323776800172828795, guid: 2066d37f4b7dc3144a32602cb0fee4d3,
+    type: 3}
 --- !u!1001 &1577965134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13025,6 +13112,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectivePickupItem 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390932, guid: f3c7f678bf44f61499566302c8083469,
+        type: 3}
+      propertyPath: message
+      value: Find an Axe to open the next room with!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390932, guid: f3c7f678bf44f61499566302c8083469,
+        type: 3}
+      propertyPath: delayBeforeShowing
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390934, guid: f3c7f678bf44f61499566302c8083469,
+        type: 3}
+      propertyPath: title
+      value: Find the Axe
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390934, guid: f3c7f678bf44f61499566302c8083469,
+        type: 3}
+      propertyPath: description
+      value: Use the axe to open the next room
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953010396602390934, guid: f3c7f678bf44f61499566302c8083469,
+        type: 3}
+      propertyPath: delayVisible
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2953010396602390935, guid: f3c7f678bf44f61499566302c8083469,
         type: 3}
       propertyPath: m_RootOrder
@@ -13214,8 +13326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5830f957516e0f646b7ce142b1a57dc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyController: {fileID: 0}
-  bones: {fileID: 0}
 --- !u!4 &1947979248 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8082043064125022623, guid: d3307fcd92db76241a129658726d2bae,
