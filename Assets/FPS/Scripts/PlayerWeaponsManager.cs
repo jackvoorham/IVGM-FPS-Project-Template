@@ -154,7 +154,7 @@ public class PlayerWeaponsManager : MonoBehaviour
         {
             if(Physics.Raycast(weaponCamera.transform.position, weaponCamera.transform.forward, out RaycastHit hit, 1000, -1, QueryTriggerInteraction.Ignore))
             {
-                if(hit.collider.GetComponentInParent<EnemyController>())
+                if(hit.collider.GetComponentInParent<EnemyController>() || hit.collider.GetComponentInParent<SkeletonController>())
                 {
                     isPointingAtEnemy = true;
                 }
