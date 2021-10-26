@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7719829676901983040}
   - component: {fileID: 7719829676903080320}
   - component: {fileID: 1030801710696404154}
+  - component: {fileID: 1913238594523713187}
   m_Layer: 0
   m_Name: Model_Statue_02 1
   m_TagString: Untagged
@@ -96,3 +97,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 07d2dab3a2de013408b15bc87871b760, type: 3}
+--- !u!114 &1913238594523713187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7719829676905021248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d22cdf2f05528e48a10d978f0d6f635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Broken: {fileID: 6551333172549492935, guid: b9eeb7262996162499754774bdd99612, type: 3}
+  BrokenDespawnTime: 3
+  SpecificWeapon: {fileID: 8323776800172828795, guid: 31d97e822763d1f4cb769f7e3f7f7333,
+    type: 3}
