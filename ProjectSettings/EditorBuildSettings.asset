@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/02_Student Folders/AmberLangbroek_assets/AmberLangbroek_Scene.unity
     guid: 7c4fe105704fc024285cb6410db761ec
   - enabled: 1
-    path: Assets/02_Student Folders/ChristianSteennis_Assets/ChristianSteennis_Scene.unity
+    path: Assets/02_Student Folders/ChristianSteennis_Assets/The Game Room.unity
     guid: d7dd074411459b84a9b42c4b69f5af8a
   - enabled: 1
     path: Assets/02_Student Folders/StevenVanPopele_Assets/Slime Time.unity
@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/02_Student Folders/JackVoorham_Assets/JackVoorham_Scene.unity
     guid: ab5f1b732682f46a7a4f167cf08663c2
   - enabled: 1
-    path: Assets/02_Student Folders/PepijnvanderHam_Assets/The Library.unity
+    path: Assets/02_Student Folders/PepijnvanderHam_Assets/The Livid Library.unity
     guid: 9dfb55031bb34b4468e00920dbf88142
   m_configObjects: {}
