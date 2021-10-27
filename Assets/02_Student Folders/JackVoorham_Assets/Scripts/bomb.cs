@@ -26,6 +26,7 @@ public class bomb : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
+        Debug.Log("Hello");
         in_trigger = true;
     }
 
@@ -38,8 +39,7 @@ public class bomb : MonoBehaviour
         if (in_trigger && !script.has_bomb)
         {
             GUI.Box(new Rect((Screen.width-200)/2, (Screen.height-25)/2, 200, 25), "Press E to pick up bomb");
-        }
-        
+        } 
     }
 }
 

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &601767901
+--- !u!65 &601767903
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11,21 +11,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.6845293, y: 2.447052, z: 12.759571}
-  m_Center: {x: -0.6341298, y: 0, z: 0.21929741}
---- !u!65 &601767903
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4550951543364513875}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.190962, y: 3.6911392, z: 5.0216484}
-  m_Center: {x: -0.67205966, y: -0.017821789, z: 0.030183792}
+  m_Size: {x: 4.988735, y: 3.6911392, z: 4.2723274}
+  m_Center: {x: -0.19924083, y: -0.017821789, z: 0.0587368}
 --- !u!114 &601767900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,7 +25,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f5234e94e80a443b054db1fee743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb_collider: {fileID: 601767901}
+  bomb_collider: {fileID: 601767903}
 --- !u!1 &4724231995277555000
 GameObject:
   m_ObjectHideFlags: 0
