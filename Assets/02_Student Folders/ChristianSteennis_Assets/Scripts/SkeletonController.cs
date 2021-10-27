@@ -36,17 +36,6 @@ public class SkeletonController : MonoBehaviour
     [Tooltip("Time delay between a weapon swap and the next attack")]
     public float delayAfterWeaponSwap = 0f;
 
-/*
-    [Header("Eye color")]
-    [Tooltip("Material for the eye color")]
-    public Material eyeColorMaterial;
-    [Tooltip("The default color of the bot's eye")]
-    [ColorUsageAttribute(true, true)]
-    public Color defaultEyeColor;
-    [Tooltip("The attack color of the bot's eye")]
-    [ColorUsageAttribute(true, true)]
-    public Color attackEyeColor;*/
-
     [Header("Flash on hit")]
     [Tooltip("The material used for the body of the hoverbot")]
     public Material bodyMaterial;
@@ -59,12 +48,6 @@ public class SkeletonController : MonoBehaviour
     [Header("Sounds")]
     [Tooltip("Sound played when recieving damages")]
     public AudioClip damageTick;
-
-    /*[Header("VFX")]
-    [Tooltip("The VFX prefab spawned when the enemy dies")]
-    public GameObject deathVFX;
-    [Tooltip("The point at which the death VFX is spawned")]
-    public Transform deathVFXSpawnPoint; */
 
     [Header("Dropables")]
     [Tooltip("The object that is shown on the floor on dying")]
@@ -92,9 +75,6 @@ public class SkeletonController : MonoBehaviour
     List<RendererIndexData> m_BodyRenderers = new List<RendererIndexData>();
     MaterialPropertyBlock m_BodyFlashMaterialPropertyBlock;
     float m_LastTimeDamaged = float.NegativeInfinity;
-/* 
-    RendererIndexData m_EyeRendererData; 
-    MaterialPropertyBlock m_EyeColorMaterialPropertyBlock;*/
 
     public PatrolPath patrolPath { get; set; }
     public GameObject knownDetectedTarget => m_DetectionModule.knownDetectedTarget;
@@ -187,14 +167,6 @@ public class SkeletonController : MonoBehaviour
         }
 
         m_BodyFlashMaterialPropertyBlock = new MaterialPropertyBlock();
-
-        // Check if we have an eye renderer for this enemy
-        /* if (m_EyeRendererData.renderer != null)
-        {
-            m_EyeColorMaterialPropertyBlock = new MaterialPropertyBlock();
-            m_EyeColorMaterialPropertyBlock.SetColor("_EmissionColor", defaultEyeColor);
-            m_EyeRendererData.renderer.SetPropertyBlock(m_EyeColorMaterialPropertyBlock, m_EyeRendererData.materialIndex);
-        } */
     }
 
     void Update()
@@ -226,25 +198,11 @@ public class SkeletonController : MonoBehaviour
     void OnLostTarget()
     {
         onLostTarget.Invoke();
-
-        // Set the eye attack color and property block if the eye renderer is set
-        /* if (m_EyeRendererData.renderer != null)
-        {
-            m_EyeColorMaterialPropertyBlock.SetColor("_EmissionColor", defaultEyeColor);
-            m_EyeRendererData.renderer.SetPropertyBlock(m_EyeColorMaterialPropertyBlock, m_EyeRendererData.materialIndex);
-        } */
     }
 
     void OnDetectedTarget()
     {
         onDetectedTarget.Invoke();
-
-        // Set the eye default color and property block if the eye renderer is set
-        /* if (m_EyeRendererData.renderer != null)
-        {
-            m_EyeColorMaterialPropertyBlock.SetColor("_EmissionColor", attackEyeColor);
-            m_EyeRendererData.renderer.SetPropertyBlock(m_EyeColorMaterialPropertyBlock, m_EyeRendererData.materialIndex);
-        } */
     }
     
     public void OrientTowards(Vector3 lookPosition)
@@ -375,8 +333,15 @@ public class SkeletonController : MonoBehaviour
             Instantiate(lootPrefab, transform.position, Quaternion.identity);
         }
 
-        Instantiate(bones, new Vector3(transform.position.x, 0.25f, transform.position.z), Quaternion.identity);
-        Debug.Log("dood");
+        MeshCollider[] colliders = bones.GetComponentsInChildren<MeshCollider>();
+
+        foreach (MeshCollider col in colliders)
+        {
+            col.enabled = false;
+        }
+
+        Instantiate(bones, transform.position, Quaternion.identity);
+
         // this will call the OnDestroy function
         Destroy(gameObject, deathDuration);
     }

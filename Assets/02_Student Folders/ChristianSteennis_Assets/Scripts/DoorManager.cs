@@ -34,6 +34,8 @@ public class DoorManager : MonoBehaviour
     public AudioClip damageTick;
 
     public WeaponController doorDestroyer;
+    public DisplayMessage message;
+    public Objective objective;
 
     public UnityAction onDamaged;
     public UnityAction onDie;
@@ -43,6 +45,7 @@ public class DoorManager : MonoBehaviour
     Actor m_Actor;
     Collider[] m_SelfColliders;
     GameFlowManager m_GameFlowManager;
+    PlayerWeaponsManager m_weaponsManager;
     bool m_WasDamagedThisFrame;
     bool dead = false;
 
@@ -62,22 +65,27 @@ public class DoorManager : MonoBehaviour
         m_GameFlowManager = FindObjectOfType<GameFlowManager>();
         DebugUtility.HandleErrorIfNullFindObject<GameFlowManager, SkeletonController>(m_GameFlowManager, this);
 
+        m_weaponsManager = FindObjectOfType<PlayerWeaponsManager>();
+
         // Subscribe to damage & death actions
         m_Health.onDie += OnDie;
         m_Health.onDamaged += OnDamaged;
+        m_Health.invincible = true;
     }
 
     void Update()
     {
         m_WasDamagedThisFrame = false;
+        if (m_weaponsManager.GetActiveWeapon().sourcePrefab == doorDestroyer.gameObject) {
+            m_Health.invincible = false;
+        }
     }
 
     void OnDamaged(float damage, GameObject damageSource)
     {
         // test if the damage source is the player
-        if (damageSource && damageSource.GetComponent<PlayerCharacterController>() && damageSource.GetComponent<PlayerWeaponsManager>().GetActiveWeapon() == doorDestroyer)
+        if (damageSource && damageSource.GetComponent<PlayerCharacterController>())
         {
-            Debug.Log("damage");
             if (onDamaged != null)
             {
                 onDamaged.Invoke();
@@ -94,6 +102,7 @@ public class DoorManager : MonoBehaviour
     void OnDie()
     {   
         dead = true;
+        m_weaponsManager.RemoveWeapon(m_weaponsManager.GetActiveWeapon());
         if (onDie != null)
         {
             onDie.Invoke();
@@ -101,5 +110,12 @@ public class DoorManager : MonoBehaviour
 
         // this will call the OnDestroy function
         Destroy(gameObject, 0f);
+    }
+
+    void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.GetComponent<PlayerCharacterController>()) {
+            message.enabled = true;
+            objective.enabled = true;
+        }
     }
 }

@@ -9,26 +9,34 @@ public class FinalRoom : MonoBehaviour
     EnemyManager enemyManager;
     SkeletonManager skeletonManager;
     int remainingEnemies;
+    public GameObject enemy;
 
     // Start is called before the first frame update
     void Start()
     {
         enemyManager = FindObjectOfType<EnemyManager>();
         skeletonManager = FindObjectOfType<SkeletonManager>();
-        remainingEnemies = enemyManager.numberOfEnemiesRemaining + skeletonManager.numberOfEnemiesRemaining;
+    }
+    
+    void OnCollisionEnter(Collision ander) {
+        if (ander.gameObject.GetComponent<PlayerCharacterController>()) {
+            GetComponent<DisplayMessage>().enabled = true;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (remainingEnemies == 0) {
-            barricade.gameObject.SetActive(false);
+        remainingEnemies = enemyManager.numberOfEnemiesRemaining + skeletonManager.numberOfEnemiesRemaining;
+        if (remainingEnemies == 0 && barricade.enabled) {
+            barricade.enabled = false;
+            SpawnLastEnemies();
         }
     }
 
-    void OnCollision(Collider ander) {
-        if (ander.name == "Player") {
-            // display message
-        }
+    void SpawnLastEnemies() {
+        Instantiate(enemy, new Vector3(8.0f, 0.25f, -2.0f), Quaternion.identity);
+        Instantiate(enemy, new Vector3(8.0f, 0.25f, -13.0f), Quaternion.identity);
     }
+
 }
