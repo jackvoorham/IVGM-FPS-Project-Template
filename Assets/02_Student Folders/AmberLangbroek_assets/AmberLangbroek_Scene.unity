@@ -728,6 +728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6370966072896210225, guid: 3d30805882cadb94c8a9761586c317f4,
         type: 3}
+      propertyPath: maxHealth
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370966072896210225, guid: 3d30805882cadb94c8a9761586c317f4,
+        type: 3}
       propertyPath: criticalHealthRatio
       value: 0.3
       objectReference: {fileID: 0}
