@@ -1,0 +1,603 @@
+fileFormatVersion: 2
+guid: 2ce4502e7574052409faede084a02757
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      43: 4300000
+    second: MUMMY
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - be165457d51a61c41995f07e1ccaf42f
+  - 6792a955bd29e8f499117017f6cf1466
+  - 4712bf4255b750541b59d5de9cc8fa3a
+  - 9f457cfee40aca34aa1b4c10f401f2ed
+  - bce08295a17afa74584f05a2a4f6a0d9
+  - 972e681a0dd947f46b47753112a88b6b
+  - d4f36f10fc46f1d45aad4cdf5b0424ee
+  - f52f1a3e85849a74a952d1eed7fe6e84
+  - eab7aa115a3a96243ad1d3165b9f039a
+  - 723dc6d7e16135441a7ba0b5ef5edb10
+  - 4822a93e6902ccb4a8e5aecc521b6c70
+  - 95d69fa3f69477e4aac39eebc860a557
+  - 2cbc485f9f1da5a488470559d57f5716
+  - 367b73b4b751ee84bb283f55bfbbee5e
+  - cf015c6c1aa1c3a42ab1dc192ff8e56c
+  - 00246ae0970aee64f94a5b6d4ede125c
+  - 23dfd05c0aeeb9c4c862a830a066f9a2
+  - bd72bc2a67b770b43a9d0c579cb9610e
+  - ac268ab13eb98734d9c298b29e40218b
+  - 0f48c91c2fa057341bd4e4ec246b0ef9
+  - b098aa56063ccb44392377facf1ebd83
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: MUMMY 1(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0.0000015243515, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MUMMY
+      parentName: MUMMY 1(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MUMMY_
+      parentName: MUMMY 1(Clone)
+      position: {x: -0, y: 1.0470427, z: 0.024122076}
+      rotation: {x: -0.50000036, y: 0.49999967, z: 0.49999967, w: 0.50000036}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: MUMMY_ Pelvis
+      parentName: MUMMY_
+      position: {x: 0, y: 0, z: 0.047586083}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MUMMY_ Spine
+      parentName: MUMMY_ Pelvis
+      position: {x: -0.10846901, y: -0.0001950717, z: 0.00000015069527}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: MUMMY_ Spine1
+      parentName: MUMMY_ Spine
+      position: {x: -0.24524406, y: -0.000195117, z: -5.411675e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.9999999}
+    - name: MUMMY_ Neck
+      parentName: MUMMY_ Spine1
+      position: {x: -0.2654782, y: -0.029495439, z: -0.000000039297138}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: MUMMY_ L Clavicle
+      parentName: MUMMY_ Neck
+      position: {x: 0.009121551, y: 0.034581106, z: 0.03865787}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 0.99999964, y: 0.9999995, z: 0.99999946}
+    - name: MUMMY_ L UpperArm
+      parentName: MUMMY_ L Clavicle
+      position: {x: -0.14284374, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MUMMY_ L Forearm
+      parentName: MUMMY_ L UpperArm
+      position: {x: -0.371431, y: 0.000000009536743, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.99999994, z: 0.9999999}
+    - name: MUMMY_ L Hand
+      parentName: MUMMY_ L Forearm
+      position: {x: -0.30973732, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Factice002
+      parentName: MUMMY_ L Hand
+      position: {x: -0.09466263, y: 0.008889775, z: 0.0031142426}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: MUMMY_BANDAGE_ARM_L_1
+      parentName: Factice002
+      position: {x: -0.000000076293944, y: -0.00000015199184, z: 0.000000076293944}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: MUMMY_BANDAGE_ARM_L_2
+      parentName: MUMMY_BANDAGE_ARM_L_1
+      position: {x: -0.4964592, y: -0.0000000011920929, z: -0.000000010964254}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: MUMMY_BANDAGE_ARM_L_3
+      parentName: MUMMY_BANDAGE_ARM_L_2
+      position: {x: -0.5002471, y: 0.0000000023841857, z: -4.0165558e-12}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: MUMMY_BANDAGE_ARM_L_4
+      parentName: MUMMY_BANDAGE_ARM_L_3
+      position: {x: -0.5010729, y: -0.00000017642975, z: 6.092861e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MUMMY_BANDAGE_ARM_L_5
+      parentName: MUMMY_BANDAGE_ARM_L_4
+      position: {x: -0.49990997, y: -0.0000000047683737, z: -6.34145e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: MUMMY_BANDAGE_ARM_L_6
+      parentName: MUMMY_BANDAGE_ARM_L_5
+      position: {x: -0.5007982, y: 0.000000009536734, z: 1.4617807e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.99999976, z: 1}
+    - name: MUMMY_BANDAGE_ARM_L_7
+      parentName: MUMMY_BANDAGE_ARM_L_6
+      position: {x: -0.499991, y: 0.000000014305021, z: 2.3327412e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: MUMMY_BANDAGE_ARM_L_8
+      parentName: MUMMY_BANDAGE_ARM_L_7
+      position: {x: -0.49744132, y: -0.00000013351443, z: -5.6899218e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: MUMMY_BANDAGE_ARM_L_nub
+      parentName: MUMMY_BANDAGE_ARM_L_8
+      position: {x: -0.50239575, y: -0.00000023111704, z: -2.5479488e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: MUMMY_ L Finger1
+      parentName: MUMMY_ L Hand
+      position: {x: -0.11293518, y: 0.00039367675, z: -0.038188245}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000006, z: 1.0000005}
+    - name: MUMMY_ L Finger11
+      parentName: MUMMY_ L Finger1
+      position: {x: -0.039941557, y: -0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.99999976, z: 1.0000002}
+    - name: MUMMY_ L Finger12
+      parentName: MUMMY_ L Finger11
+      position: {x: -0.025577469, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: MUMMY_ L Finger1Nub
+      parentName: MUMMY_ L Finger12
+      position: {x: -0.02932617, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: MUMMY_ L Finger2
+      parentName: MUMMY_ L Hand
+      position: {x: -0.116513975, y: -0.0010037231, z: -0.009829598}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000008}
+    - name: MUMMY_ L Finger21
+      parentName: MUMMY_ L Finger2
+      position: {x: -0.03713329, y: 0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.99999976}
+    - name: MUMMY_ L Finger22
+      parentName: MUMMY_ L Finger21
+      position: {x: -0.02789669, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: MUMMY_ L Finger2Nub
+      parentName: MUMMY_ L Finger22
+      position: {x: -0.03077732, y: -0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: MUMMY_ L Finger4
+      parentName: MUMMY_ L Hand
+      position: {x: -0.114493676, y: -0.00038177488, z: 0.041538656}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.9999998, z: 0.9999997}
+    - name: MUMMY_ L Finger41
+      parentName: MUMMY_ L Finger4
+      position: {x: -0.022650566, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: MUMMY_ L Finger42
+      parentName: MUMMY_ L Finger41
+      position: {x: -0.023631973, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: MUMMY_ L Finger4Nub
+      parentName: MUMMY_ L Finger42
+      position: {x: -0.022714958, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MUMMY_ L Finger0
+      parentName: MUMMY_ L Hand
+      position: {x: -0.055861738, y: 0.012377013, z: -0.043420963}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.9999999}
+    - name: MUMMY_ L Finger01
+      parentName: MUMMY_ L Finger0
+      position: {x: -0.029477423, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: MUMMY_ L Finger02
+      parentName: MUMMY_ L Finger01
+      position: {x: -0.032473374, y: -0.000000038146972, z: -0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000004}
+    - name: MUMMY_ L Finger0Nub
+      parentName: MUMMY_ L Finger02
+      position: {x: -0.029477386, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: MUMMY_ L Finger3
+      parentName: MUMMY_ L Hand
+      position: {x: -0.11499416, y: -0.00022033691, z: 0.016618766}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: MUMMY_ L Finger31
+      parentName: MUMMY_ L Finger3
+      position: {x: -0.031083297, y: 0.00000015258789, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 0.9999996}
+    - name: MUMMY_ L Finger32
+      parentName: MUMMY_ L Finger31
+      position: {x: -0.02586731, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 0.99999994}
+    - name: MUMMY_ L Finger3Nub
+      parentName: MUMMY_ L Finger32
+      position: {x: -0.029343147, y: 0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: MUMMY_ R Clavicle
+      parentName: MUMMY_ Neck
+      position: {x: 0.009121551, y: 0.034581337, z: -0.038657766}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 0.99999946, y: 0.99999976, z: 0.99999964}
+    - name: MUMMY_ R UpperArm
+      parentName: MUMMY_ R Clavicle
+      position: {x: -0.14284375, y: 0, z: 0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: MUMMY_ R Forearm
+      parentName: MUMMY_ R UpperArm
+      position: {x: -0.3714311, y: 0, z: -0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: MUMMY_ R Hand
+      parentName: MUMMY_ R Forearm
+      position: {x: -0.30973724, y: 0.000000009536743, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.9999999}
+    - name: Factice001
+      parentName: MUMMY_ R Hand
+      position: {x: -0.09466255, y: 0.008889466, z: -0.0031163788}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: MUMMY_BANDAGE_ARM_R_1
+      parentName: Factice001
+      position: {x: 0.000000076293944, y: -0.000000004172325, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000006, z: 0.9999999}
+    - name: MUMMY_BANDAGE_ARM_R_2
+      parentName: MUMMY_BANDAGE_ARM_R_1
+      position: {x: -0.4964591, y: 0.00000016748905, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: MUMMY_BANDAGE_ARM_R_3
+      parentName: MUMMY_BANDAGE_ARM_R_2
+      position: {x: -0.5002472, y: -0.00000012636184, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: MUMMY_BANDAGE_ARM_R_4
+      parentName: MUMMY_BANDAGE_ARM_R_3
+      position: {x: -0.501073, y: 0.00000003695488, z: 0.000000114440915}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
+    - name: MUMMY_BANDAGE_ARM_R_5
+      parentName: MUMMY_BANDAGE_ARM_R_4
+      position: {x: -0.49990997, y: 0.000000048279762, z: 0.000000057220458}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999997, y: 0.99999946, z: 1}
+    - name: MUMMY_BANDAGE_ARM_R_6
+      parentName: MUMMY_BANDAGE_ARM_R_5
+      position: {x: -0.50079834, y: -0.000000091195105, z: 0.000000047683713}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: MUMMY_BANDAGE_ARM_R_7)
+      parentName: MUMMY_BANDAGE_ARM_R_6
+      position: {x: -0.49999115, y: -0.00000008404255, z: 0.000000057220458}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999997, y: 0.9999998, z: 1}
+    - name: MUMMY_BANDAGE_ARM_R_8
+      parentName: MUMMY_BANDAGE_ARM_R_7)
+      position: {x: -0.4974417, y: -0.00000007510185, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 1}
+    - name: MUMMY_BANDAGE_ARM_R_nub
+      parentName: MUMMY_BANDAGE_ARM_R_8
+      position: {x: -0.5023959, y: 0.0000003802776, z: 0.000000076293944}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1}
+    - name: MUMMY_ R Finger1
+      parentName: MUMMY_ R Hand
+      position: {x: -0.1129351, y: 0.00039367675, z: 0.038188227}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: MUMMY_ R Finger11
+      parentName: MUMMY_ R Finger1
+      position: {x: -0.039941557, y: -0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1}
+    - name: MUMMY_ R Finger12
+      parentName: MUMMY_ R Finger11
+      position: {x: -0.025577316, y: 0.00000015258789, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1}
+    - name: MUMMY_ R Finger1Nub
+      parentName: MUMMY_ R Finger12
+      position: {x: -0.029326057, y: 0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1.0000001, y: -1, z: -1.0000001}
+    - name: MUMMY_ R Finger2
+      parentName: MUMMY_ R Hand
+      position: {x: -0.11651382, y: -0.0010037231, z: 0.009829578}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999999}
+    - name: MUMMY_ R Finger21
+      parentName: MUMMY_ R Finger2
+      position: {x: -0.03713337, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999999}
+    - name: MUMMY_ R Finger22
+      parentName: MUMMY_ R Finger21
+      position: {x: -0.0278965, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1}
+    - name: MUMMY_ R Finger2Nub
+      parentName: MUMMY_ R Finger22
+      position: {x: -0.030777281, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -0.99999994}
+    - name: MUMMY_ R Finger0
+      parentName: MUMMY_ R Hand
+      position: {x: -0.055861816, y: 0.012376709, z: 0.043420963}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: MUMMY_ R Finger01
+      parentName: MUMMY_ R Finger0
+      position: {x: -0.029477423, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: MUMMY_ R Finger02
+      parentName: MUMMY_ R Finger01
+      position: {x: -0.032473374, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
+    - name: MUMMY_ R Finger0Nub
+      parentName: MUMMY_ R Finger02
+      position: {x: -0.029477423, y: 0.000000038146972, z: 0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1.0000001, y: -1.0000001, z: -1}
+    - name: MUMMY_ R Finger4
+      parentName: MUMMY_ R Hand
+      position: {x: -0.11449375, y: -0.00038192747, z: -0.041538656}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: MUMMY_ R Finger41
+      parentName: MUMMY_ R Finger4
+      position: {x: -0.022650642, y: -0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000001}
+    - name: MUMMY_ R Finger42
+      parentName: MUMMY_ R Finger41
+      position: {x: -0.023631934, y: 0, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MUMMY_ R Finger4Nub
+      parentName: MUMMY_ R Finger42
+      position: {x: -0.022714881, y: 0, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: MUMMY_ R Finger3
+      parentName: MUMMY_ R Hand
+      position: {x: -0.11499416, y: -0.00022064209, z: -0.016618766}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000001}
+    - name: MUMMY_ R Finger31
+      parentName: MUMMY_ R Finger3
+      position: {x: -0.031083297, y: 0, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000001}
+    - name: MUMMY_ R Finger32
+      parentName: MUMMY_ R Finger31
+      position: {x: -0.025867233, y: 0, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 0.9999999}
+    - name: MUMMY_ R Finger3Nub
+      parentName: MUMMY_ R Finger32
+      position: {x: -0.02934307, y: 0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: MUMMY_ Head
+      parentName: MUMMY_ Neck
+      position: {x: -0.07817078, y: 0.0051853177, z: 0.0000000048913353}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.99999994, z: 0.9999997}
+    - name: MUMMY_ HeadNub
+      parentName: MUMMY_ Head
+      position: {x: -0.24444243, y: 0, z: -7.2759575e-14}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: MUMMY_ Queue de cheval 1
+      parentName: MUMMY_ Head
+      position: {x: -0.03960205, y: 0.03858715, z: 0.00000007086812}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000002}
+    - name: MUMMY_ Queue de cheval 1Nub
+      parentName: MUMMY_ Queue de cheval 1
+      position: {x: -0.11178028, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MUMMY_ R Thigh
+      parentName: MUMMY_ Spine
+      position: {x: 0.108386226, y: -0.004241724, z: -0.09432782}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.9999998, y: 1, z: 0.99999964}
+    - name: MUMMY_ R Calf
+      parentName: MUMMY_ R Thigh
+      position: {x: -0.47163868, y: 0.0000000047683715, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000004, z: 1.0000002}
+    - name: MUMMY_ R Foot
+      parentName: MUMMY_ R Calf
+      position: {x: -0.47163874, y: -0.0000000023841857, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+    - name: MUMMY_ R Toe0
+      parentName: MUMMY_ R Foot
+      position: {x: -0.11954917, y: 0.15828152, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: MUMMY_ R Toe0Nub
+      parentName: MUMMY_ R Toe0
+      position: {x: -0.07085488, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: MUMMY_ L Thigh
+      parentName: MUMMY_ Spine
+      position: {x: 0.108386226, y: -0.0042422437, z: 0.0943278}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
+    - name: MUMMY_ L Calf
+      parentName: MUMMY_ L Thigh
+      position: {x: -0.47163868, y: 0.0000000047683715, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.9999997}
+    - name: MUMMY_ L Foot
+      parentName: MUMMY_ L Calf
+      position: {x: -0.4716387, y: -0.0000000047683715, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: MUMMY_ L Toe0
+      parentName: MUMMY_ L Foot
+      position: {x: -0.11954917, y: 0.15828153, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000006}
+    - name: MUMMY_ L Toe0Nub
+      parentName: MUMMY_ L Toe0
+      position: {x: -0.070854865, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -0.99999994, y: -1, z: -0.99999994}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 1
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
