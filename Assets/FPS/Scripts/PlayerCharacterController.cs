@@ -130,6 +130,11 @@ public class PlayerCharacterController : MonoBehaviour
 
     public float slowTimer;
 
+    [Header("Disguise")]
+    public bool disguiseIsOn = false;
+
+    public float disguiseTimer;
+
 
     void Start()
     {
@@ -192,6 +197,18 @@ public class PlayerCharacterController : MonoBehaviour
             maxSpeedOnGround = 10f;
             maxSpeedInAir = 10f;
             slowIsOn = false;
+        }
+
+        //disguise
+        if (disguiseIsOn && disguiseTimer > 0f)
+        {
+            disguiseTimer -= Time.deltaTime;
+            m_Actor.affiliation = 0;
+        }
+        else if (disguiseIsOn && disguiseTimer <= 0f)
+        {
+            m_Actor.affiliation = 1;
+            disguiseIsOn = false;
         }
     
         // landing
