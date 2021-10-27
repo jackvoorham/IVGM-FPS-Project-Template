@@ -4,32 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/01_Menu/MainMenuScene.unity
-    guid: 0ffac6132adb54714954003a60f4f424
-  - enabled: 1
-    path: Assets/02_Student Folders/AmberLangbroek_assets/AmberLangbroek_Scene.unity
-    guid: 7c4fe105704fc024285cb6410db761ec
-  - enabled: 1
-    path: Assets/02_Student Folders/AyushKandhai_Assets/AyushKandhai_Scene.unity
-    guid: 4fe745b74fe2eed408e1d2d976b21171
-  - enabled: 1
-    path: Assets/02_Student Folders/BernardoPaixao_Assets/BernardoPaixao_Scene.unity
-    guid: c1fd8fb30c5f2ff40aa70220ee4bc47a
-  - enabled: 1
-    path: Assets/02_Student Folders/ChristianSteennis_Assets/ChristianSteennis_Scene.unity
-    guid: d7dd074411459b84a9b42c4b69f5af8a
-  - enabled: 1
-    path: Assets/02_Student Folders/StevenVanPopele_Assets/StevenVanPopele_Scene.unity
-    guid: 438b1a49089a9f740bd4e608cc4c5333
-  - enabled: 1
-    path: Assets/02_Student Folders/JackVoorham_Assets/JackVoorham_Scene.unity
-    guid: ab5f1b732682f46a7a4f167cf08663c2
-  - enabled: 1
-    path: Assets/02_Student Folders/JildouVollema_Assets/JildouVollema_Scene.unity
-    guid: f46a80e2abd542040aaa443383a9c5c7
-  - enabled: 1
-    path: Assets/02_Student Folders/PepijnvanderHam_Assets/The library.unity
-    guid: 9dfb55031bb34b4468e00920dbf88142
+  m_Scenes: []
   m_configObjects: {}
