@@ -132,7 +132,7 @@ public class PlayerCharacterController : MonoBehaviour
 
     [Header("Disguise")]
     public bool disguiseIsOn = false;
-
+    [HideInInspector]
     public float disguiseTimer;
 
 

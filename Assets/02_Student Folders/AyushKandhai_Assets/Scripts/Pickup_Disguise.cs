@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pickup_Disguise : MonoBehaviour
 {    
     Pickup m_Pickup;
-
+    public float timer = 15f;
     void Start()
     {
         m_Pickup = GetComponent<Pickup>();
@@ -20,6 +20,7 @@ public class Pickup_Disguise : MonoBehaviour
         if (player && !player.disguiseIsOn)
         {
             player.disguiseIsOn = true;
+            player.disguiseTimer = timer;
             Destroy(gameObject);
         }
     }
