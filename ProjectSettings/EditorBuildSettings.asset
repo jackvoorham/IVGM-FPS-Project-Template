@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/02_Student Folders/JildouVollema_Assets/JildouVollema_Scene.unity
+    guid: f46a80e2abd542040aaa443383a9c5c7
+  - enabled: 1
     path: Assets/02_Student Folders/AmberLangbroek_assets/AmberLangbroek_Scene.unity
     guid: 7c4fe105704fc024285cb6410db761ec
   - enabled: 1
